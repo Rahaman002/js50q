@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { SimpleGrid, Card, CardHeader, CardBody, CardFooter, Heading, Button, Text } from '@chakra-ui/react';
-
+import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+import db from './firebase'
 import {
   Modal,
   ModalOverlay,
@@ -11,7 +12,11 @@ import {
 } from '@chakra-ui/react';
 
 export default function Cardcomponent() {
+  const dataq= async ()=>{
+    
+  }
 const data=  [
+  
     {
       "id": 1,
       "link": "https://www.jdoodle.com/embed/v0/6nXs",
